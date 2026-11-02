@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My jQuery Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <span class="navbar-brand">My Portfolio</span>
+      <div class="nav-links">
+        <a href="#profile">Profile</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <header id="profile" class="part1">
+    <div class="container">
+      <h1 id="welcome-title">Welcome to My Portfolio</h1>
+      <h2 id="name">Madina Sabyrgali</h2>
+      <p id="headline" class="headline">Front-End Developer in the making</p>
+      <p class="intro">
+        Hi! I am a first-year IT student at Astana IT University. I like building
+        websites and I am learning how to make them interactive with jQuery.
+      </p>
+
+      <div class="form-box">
+        <div class="buttons">
+          <button id="change-greeting">Change headline</button>
+          <button id="reset-greeting" class="secondary">Reset headline</button>
+        </div>
+        <div class="buttons">
+          <button id="light-btn" class="secondary">Light theme</button>
+          <button id="dark-btn">Dark theme</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="part2">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="bio">
+        I am a student who enjoys solving problems with code. I started with
+        HTML and CSS, then moved to JavaScript, and now I am discovering how
+        jQuery makes DOM manipulation shorter and simpler.
+      </p>
+      <p id="status" class="status">Currently learning jQuery!</p>
+      <ul id="fun-facts" class="fun-facts">
+        <li>I love playing chess in my free time.</li>
+        <li>My favorite programming language is JavaScript.</li>
+        <li>My goal is to become a full-stack developer.</li>
+      </ul>
+      <div class="buttons">
+        <button id="hide-btn">Hide</button>
+        <button id="show-btn" class="secondary">Show</button>
+        <button id="toggle-btn" class="secondary">Toggle</button>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" class="part2">
+    <div class="container">
+      <h2>My Gallery</h2>
+      <div class="gallery">
+        <figure><img src="images/photo_5422855000066564144_w.jpg" alt="Profile picture" class="gallery-img"><figcaption></figcaption></figure>
+        <figure><img src="images/photo_5422855000066564145_w.jpg" alt="Travel photo" class="gallery-img"><figcaption></figcaption></figure>
+        <figure><img src="images/photo_5422855000066564146_y.jpg" alt="Personal project" class="gallery-img"><figcaption></figcaption></figure>
+      </div>
+      <div class="buttons">
+        <button id="fade-in-btn">Fade In</button>
+        <button id="fade-out-btn" class="secondary">Fade Out</button>
+        <button id="fade-toggle-btn" class="secondary">Fade Toggle</button>
+      </div>
+    </div>
+  </section>
+  <section id="favorites" class="part2">
+    <div class="container">
+      <h2>My Favorites</h2>
+      <div class="accordion-item">
+        <h3 class="accordion-title">Favorite Music</h3>
+        <div class="panel"><p>Duvet</p></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-title">Favorite Movie</h3>
+        <div class="panel"><p>Hunger games</p></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-title">Favorite Subject</h3>
+        <div class="panel"><p>Web Technologies.</p></div>
+      </div>
+      <div class="buttons">
+        <button id="open-all-btn">Open all</button>
+        <button id="close-all-btn" class="secondary">Close all </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="part3">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <ul id="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+      <div class="form-box">
+        <label for="skill-input">New skill</label>
+        <input type="text" id="skill-input" placeholder="Enter a new skill">
+        <div class="buttons">
+          <button id="add-skill-btn">Add Skill</button>
+          <button id="prepend-skill-btn">Prepend Skill</button>
+          <button id="remove-skill-btn" class="secondary">Remove Skill</button>
+        </div>
+        <p id="skill-message" class="message"></p>
+      </div>
+      <h3>Skill Levels</h3>
+      <div class="skill">
+        <span class="skill-name">HTML</span>
+        <div class="bar-bg"><div class="bar" id="bar-html">90%</div></div>
+      </div>
+      <div class="skill">
+        <span class="skill-name">CSS</span>
+        <div class="bar-bg"><div class="bar" id="bar-css">75%</div></div>
+      </div>
+      <div class="skill">
+        <span class="skill-name">JavaScript</span>
+        <div class="bar-bg"><div class="bar" id="bar-js">60%</div></div>
+      </div>
+      <div class="skill">
+        <span class="skill-name">Python</span>
+        <div class="bar-bg"><div class="bar" id="bar-python">45%</div></div>
+      </div>
+      <div class="buttons">
+        <button id="animate-btn">Animate My Skills</button>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="part3">
+    <div class="container">
+      <h2>Contact</h2>
+      <h3>My Social Link</h3>
+      <p>
+        <a id="social-link" href="https://github.com/qzxcvwyil" target="_blank">GitHub</a>
+      </p>
+      <p class="small">Current link: <span id="link-url">https://github.com/qzxcvwyil</span></p>
+      <button id="change-link-btn">Change link to LinkedIn</button>
+      <h3>Contact Form</h3>
+      <form id="contact-form" class="form-box">
+        <label for="name-input">Name</label>
+        <input type="text" id="name-input" placeholder="Your name">
+
+        <label for="email-input">Email</label>
+        <input type="email" id="email-input" placeholder="you@example.com">
+
+        <div class="live-output">
+          <p>Name: <strong id="name-output">-</strong></p>
+          <p>Email: <strong id="email-output">-</strong></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Madina Sabyrgali &middot; Assignment #6 &middot; jQuery</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
